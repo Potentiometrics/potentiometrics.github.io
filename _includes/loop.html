@@ -18,10 +18,10 @@
         {% unless post.tags contains 'sample' % and page.class == 'home-template' %}
         <article class="post">
             <header class="post-header">
-                <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">{{ post.title }}</a></h2>
+                <h2 class="post-title"><a href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}.html">{{ post.title }}</a></h2>
             </header>
             <section class="post-excerpt">
-                <p>{{ post.content | strip_html | truncatewords: 26 }} <a class="read-more" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}">&raquo;</a></p>
+                <p>{{ post.content | strip_html | truncatewords: 26 }} <a class="read-more" href="{{ site.baseurl }}{{ post.url | remove_first: '/' }}.html">&raquo;</a></p>
             </section>
             <footer class="post-meta">
                 {% for author in site.data.authors %} 
